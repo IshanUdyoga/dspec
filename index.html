@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dspec Garage — Sri Lanka's premier JDM garage in Polgasowita. Engine repair, hybrid battery, transmission, ABS, electrical diagnostics, painting & detailing." />
+  <title>DSPEC Garage | JDM Specialists · Sri Lanka</title>
+  <link rel="icon" type="image/png" href="logo.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       PRELOADER
+  ═══════════════════════════════════════════ -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <img src="logo.jpg" alt="Dspec Garage" class="preloader-logo" />
+      <div class="preloader-bar"><div class="preloader-fill"></div></div>
+      <p class="preloader-text">INITIALIZING · · ·</p>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       PARTICLE CANVAS
+  ═══════════════════════════════════════════ -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- ═══════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════ -->
+  <header id="navbar">
+    <nav class="nav-container">
+      <a href="#home" class="nav-brand">
+        <img src="logo.jpg" alt="Dspec Garage Logo" />
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home"     class="nav-link active">Home</a></li>
+        <li><a href="#about"    class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#workshop" class="nav-link">Workshop</a></li>
+        <li><a href="#contact"  class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <a href="tel:0712233212" class="nav-cta-btn">
+          <i class="fas fa-phone"></i>
+          <span>Call Us</span>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ═══════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <section id="home" class="hero">
+    <div class="hero-media">
+      <img src="mechanic-hand-checking-fixing-broken-car-car-service-garage.jpg" alt="Car engine" class="hero-bg-img" id="parallaxBg" />
+      <div class="hero-overlay"></div>
+      <div class="hero-gradient"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="eyebrow-dot"></span>
+        JDM GARAGE &nbsp;·&nbsp; POLGASOWITA, SRI LANKA
+        <span class="eyebrow-dot"></span>
+      </div>
+
+      <div class="hero-logo-wrap">
+        <img src="logo.jpg" alt="Dspec Garage" class="hero-logo" />
+      </div>
+
+      <h1 class="hero-headline">
+        <span class="line-top glitch" data-text="DRIVEN BY">DRIVEN BY</span>
+        <span class="line-bottom">PASSION</span>
+      </h1>
+
+      <p class="hero-sub">
+        Sri Lanka's premier destination for JDM & Japanese performance vehicles.
+        Precision diagnostics, expert repairs, and professional detailing — all under one roof.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#services" class="btn-primary">
+          <span>Explore Services</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="#contact" class="btn-outline">
+          <i class="fas fa-phone"></i>
+          <span>Book a Service</span>
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <strong class="count-up" data-target="500">0</strong><sup>+</sup>
+          <span>Cars Serviced</span>
+        </div>
+        <div class="hero-stat-div"></div>
+        <div class="hero-stat">
+          <strong class="count-up" data-target="10">0</strong><sup>+</sup>
+          <span>Years Experience</span>
+        </div>
+        <div class="hero-stat-div"></div>
+        <div class="hero-stat">
+          <strong class="count-up" data-target="100">0</strong><sup>%</sup>
+          <span>Satisfaction</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <div class="mouse-wrap">
+        <div class="mouse-wheel"></div>
+      </div>
+      <span>SCROLL</span>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       TICKER TAPE
+  ═══════════════════════════════════════════ -->
+  <div class="ticker-wrap" aria-hidden="true">
+    <div class="ticker-track">
+      <div class="ticker-content">
+        <span>ENGINE REPAIR</span><span class="dot">◆</span>
+        <span>TRANSMISSION SERVICE</span><span class="dot">◆</span>
+        <span>HYBRID BATTERY</span><span class="dot">◆</span>
+        <span>ABS BRAKE SYSTEM</span><span class="dot">◆</span>
+        <span>ELECTRICAL DIAGNOSTICS</span><span class="dot">◆</span>
+        <span>AUTO PAINTING</span><span class="dot">◆</span>
+        <span>INTERIOR DETAILING</span><span class="dot">◆</span>
+        <span>24V / 12V SCANNING</span><span class="dot">◆</span>
+        <span>ENGINE REPAIR</span><span class="dot">◆</span>
+        <span>TRANSMISSION SERVICE</span><span class="dot">◆</span>
+        <span>HYBRID BATTERY</span><span class="dot">◆</span>
+        <span>ABS BRAKE SYSTEM</span><span class="dot">◆</span>
+        <span>ELECTRICAL DIAGNOSTICS</span><span class="dot">◆</span>
+        <span>AUTO PAINTING</span><span class="dot">◆</span>
+        <span>INTERIOR DETAILING</span><span class="dot">◆</span>
+        <span>24V / 12V SCANNING</span><span class="dot">◆</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════════ -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-grid">
+
+        <!-- Visual Column -->
+        <div class="about-visual reveal-left">
+          <div class="about-img-main-wrap">
+            <img src="creation-workshop.jpg" alt="Dspec Workshop Interior" class="about-img-main" />
+            <div class="img-shine"></div>
+          </div>
+          <div class="about-img-secondary">
+            <img src="mechanic-hand-checking-fixing-broken-car-car-service-garage.jpg" alt="Engine Work" />
+          </div>
+          <div class="about-float-badge">
+            <div class="badge-icon"><i class="fas fa-star"></i></div>
+            <div>
+              <strong>Premium</strong>
+              <span>JDM Service</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text Column -->
+        <div class="about-text reveal-right">
+          <div class="section-tag">Who We Are</div>
+          <h2 class="section-title">
+            Where <span class="accent">Japanese Precision</span><br />
+            Meets <span class="accent">Sri Lankan Passion</span>
+          </h2>
+          <p>Located in Polgasowita, DSPEC Garage is your one-stop destination for all JDM vehicle needs. From everyday maintenance to high-performance builds, our certified technicians deliver results with precision and care.</p>
+          <p>With over a decade of hands-on experience, we've built a reputation for quality, reliability, and technical excellence. We invest in the latest diagnostic technology to ensure your vehicle gets the absolute best care available.</p>
+
+          <ul class="about-list">
+            <li><i class="fas fa-check-circle"></i> Certified & Experienced Technicians</li>
+            <li><i class="fas fa-check-circle"></i> Advanced Diagnostic Equipment</li>
+            <li><i class="fas fa-check-circle"></i> Genuine & OEM Parts Used</li>
+            <li><i class="fas fa-check-circle"></i> Transparent Pricing — No Hidden Fees</li>
+            <li><i class="fas fa-check-circle"></i> JDM & Hybrid Vehicle Specialists</li>
+          </ul>
+
+          <a href="#contact" class="btn-primary">
+            <span>Get in Touch</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       SERVICES
+  ═══════════════════════════════════════════ -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag">Expert Solutions</div>
+        <h2 class="section-title">Our <span class="accent">Services</span></h2>
+        <p class="section-desc">Full-spectrum automotive care delivered with precision and passion</p>
+      </div>
+
+      <div class="services-grid">
+
+        <article class="service-card reveal-up" style="--delay:0.05s">
+          <div class="card-top">
+            <span class="card-num">01</span>
+            <div class="card-icon"><i class="fas fa-gears"></i></div>
+          </div>
+          <h3>Engine Tune-Up &amp; Repair</h3>
+          <p>Complete engine diagnostics, performance tune-ups, and comprehensive engine rebuilds. From carb cleaning to full overhauls.</p>
+          <a href="#contact" class="card-link">Book Service <i class="fas fa-arrow-right"></i></a>
+          <div class="card-glow"></div>
+        </article>
+
+        <article class="service-card reveal-up" style="--delay:0.1s">
+          <div class="card-top">
+            <span class="card-num">02</span>
+            <div class="card-icon"><i class="fas fa-rotate"></i></div>
+          </div>
+          <h3>Transmission Repair</h3>
+          <p>Expert manual and automatic transmission servicing — fluid flushes, gear adjustment, and complete rebuilds for all models.</p>
+          <a href="#contact" class="card-link">Book Service <i class="fas fa-arrow-right"></i></a>
+          <div class="card-glow"></div>
+        </article>
+
+        <article class="service-card reveal-up" style="--delay:0.15s">
+          <div class="card-top">
+            <span class="card-num">03</span>
+            <div class="card-icon"><i class="fas fa-car-battery"></i></div>
+          </div>
+          <h3>Hybrid Battery Repair &amp; Replacement</h3>
+          <p>Specialized hybrid battery diagnosis, cell balancing, repair, and replacement for Toyota, Honda, and all hybrid models.</p>
+          <a href="#contact" class="card-link">Book Service <i class="fas fa-arrow-right"></i></a>
+          <div class="card-glow"></div>
+        </article>
+
+        <article class="service-card reveal-up" style="--delay:0.2s">
+          <div class="card-top">
+            <span class="card-num">04</span>
+            <div class="card-icon"><i class="fas fa-circle-stop"></i></div>
+          </div>
+          <h3>ABS Brake Repair &amp; Replacement</h3>
+          <p>Full ABS system diagnostics, module repairs, sensor replacements, and complete brake system overhauls for maximum safety.</p>
+          <a href="#contact" class="card-link">Book Service <i class="fas fa-arrow-right"></i></a>
+          <div class="card-glow"></div>
+        </article>
+
+        <article class="service-card reveal-up" style="--delay:0.25s">
+          <div class="card-top">
+            <span class="card-num">05</span>
+            <div class="card-icon"><i class="fas fa-bolt"></i></div>
+          </div>
+          <h3>Electrical Services</h3>
+          <p>Comprehensive automotive electrical diagnostics and repair — from wiring harnesses to ECU programming and sensor replacement.</p>
+          <a href="#contact" class="card-link">Book Service <i class="fas fa-arrow-right"></i></a>
+          <div class="card-glow"></div>
+        </article>
+
+        <article class="service-card reveal-up" style="--delay:0.3s">
+          <div class="card-top">
+            <span class="card-num">06</span>
+            <div class="card-icon"><i class="fas fa-microchip"></i></div>
+          </div>
+          <h3>24V / 12V Scanning &amp; Troubleshooting</h3>
+          <p>Advanced OBD-II and proprietary scanner diagnostics for 12V and 24V systems. Accurate fault code reading and resolution.</p>
+          <a href="#contact" class="card-link">Book Service <i class="fas fa-arrow-right"></i></a>
+          <div class="card-glow"></div>
+        </article>
+
+        <article class="service-card reveal-up" style="--delay:0.35s">
+          <div class="card-top">
+            <span class="card-num">07</span>
+            <div class="card-icon"><i class="fas fa-spray-can-sparkles"></i></div>
+          </div>
+          <h3>Auto Painting &amp; Polishing</h3>
+          <p>Professional auto body painting, colour matching, clear coat application, machine polishing, and paint correction services.</p>
+          <a href="#contact" class="card-link">Book Service <i class="fas fa-arrow-right"></i></a>
+          <div class="card-glow"></div>
+        </article>
+
+        <article class="service-card reveal-up" style="--delay:0.4s">
+          <div class="card-top">
+            <span class="card-num">08</span>
+            <div class="card-icon"><i class="fas fa-car-side"></i></div>
+          </div>
+          <h3>Exterior &amp; Interior Detailing</h3>
+          <p>Full vehicle detailing: exterior wash, clay bar, wax, interior deep clean, leather conditioning, and ceramic coating options.</p>
+          <a href="#contact" class="card-link">Book Service <i class="fas fa-arrow-right"></i></a>
+          <div class="card-glow"></div>
+        </article>
+
+        <article class="service-card service-card--wide reveal-up" style="--delay:0.45s">
+          <div class="card-top">
+            <span class="card-num">+</span>
+            <div class="card-icon"><i class="fas fa-wrench"></i></div>
+          </div>
+          <h3>All Types of Vehicle Repairs</h3>
+          <p>From minor fixes to complex overhauls — if it moves, we fix it. Our comprehensive workshop handles all makes and models with expert care and cutting-edge equipment.</p>
+          <a href="#contact" class="card-link">Book Service <i class="fas fa-arrow-right"></i></a>
+          <div class="card-glow"></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       WORKSHOP
+  ═══════════════════════════════════════════ -->
+  <section id="workshop" class="workshop">
+    <div class="workshop-bg">
+      <img src="creation-workshop.jpg" alt="Dspec Workshop" class="workshop-bg-img" />
+      <div class="workshop-overlay"></div>
+    </div>
+
+    <div class="container workshop-inner">
+      <div class="reveal-up">
+        <div class="section-tag">Our Workshop</div>
+        <h2 class="section-title">State-of-the-Art <span class="accent">Facility</span></h2>
+        <p class="section-desc">Equipped with industry-leading tools and diagnostic systems to handle any challenge</p>
+      </div>
+
+      <div class="workshop-grid">
+        <div class="workshop-feat reveal-up" style="--delay:0.1s">
+          <div class="feat-icon"><i class="fas fa-tools"></i></div>
+          <h4>Professional Tools</h4>
+          <p>Japanese precision tools and equipment for every job</p>
+        </div>
+        <div class="workshop-feat reveal-up" style="--delay:0.2s">
+          <div class="feat-icon"><i class="fas fa-laptop-medical"></i></div>
+          <h4>Advanced Diagnostics</h4>
+          <p>Latest OBD scanners and ECU diagnostic systems</p>
+        </div>
+        <div class="workshop-feat reveal-up" style="--delay:0.3s">
+          <div class="feat-icon"><i class="fas fa-shield-halved"></i></div>
+          <h4>Safe &amp; Secure</h4>
+          <p>Your vehicle is in trusted and experienced hands</p>
+        </div>
+        <div class="workshop-feat reveal-up" style="--delay:0.4s">
+          <div class="feat-icon"><i class="fas fa-clock"></i></div>
+          <h4>Efficient Service</h4>
+          <p>Minimal downtime, maximum quality output</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       CTA BANNER
+  ═══════════════════════════════════════════ -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-box reveal-up">
+        <div class="cta-glow-orb"></div>
+        <div class="cta-text">
+          <h2>Ready to Give Your Vehicle the <span class="accent">Best Care?</span></h2>
+          <p>Contact us today and let our experts handle the rest.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="tel:0712233212" class="btn-primary">
+            <i class="fas fa-phone"></i>
+            <span>071 223 3212</span>
+          </a>
+          <a href="tel:0717400699" class="btn-outline">
+            <i class="fas fa-phone"></i>
+            <span>071 740 0699</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       CONTACT
+  ═══════════════════════════════════════════ -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag">Find Us</div>
+        <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+        <p class="section-desc">We're here to help — reach out any time</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Info Card -->
+        <div class="contact-card reveal-left">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Address</h4>
+              <p>187 Kirigampamunuwa Rd,<br />Polgasowita, Sri Lanka</p>
+              <a href="https://share.google/7xeR75CKtv4mjIkrV" target="_blank" rel="noopener noreferrer" class="map-link">
+                <i class="fas fa-location-dot"></i> View on Google Maps
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <h4>Phone</h4>
+              <a href="tel:0712233212" class="phone-link">071 223 3212</a>
+              <a href="tel:0717400699" class="phone-link">071 740 0699</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <h4>Working Hours</h4>
+              <p>Monday – Saturday<br />8:00 AM – 6:00 PM</p>
+            </div>
+          </div>
+
+          <div class="social-row">
+            <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/94712233212" target="_blank" rel="noopener noreferrer" class="social-btn social-wa" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Map -->
+        <div class="contact-map reveal-right">
+          <div class="map-wrap">
+            <iframe
+              src="https://maps.google.com/maps?q=187+Kirigampamunuwa+Rd,+Polgasowita,+Sri+Lanka&output=embed"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Dspec Garage Location on Google Maps">
+            </iframe>
+            <a href="https://share.google/7xeR75CKtv4mjIkrV" target="_blank" rel="noopener noreferrer" class="map-open-btn">
+              <i class="fas fa-location-dot"></i>
+              Open in Google Maps
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-top-line"></div>
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <img src="logo.jpg" alt="Dspec Garage" class="footer-logo" />
+          <p>Sri Lanka's premier JDM garage.<br />Precision. Performance. Passion.</p>
+          <div class="social-row" style="margin-top:20px;">
+            <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/94712233212" target="_blank" rel="noopener noreferrer" class="social-btn social-wa" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#workshop">Workshop</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li>Engine Repair</li>
+            <li>Transmission Service</li>
+            <li>Hybrid Battery</li>
+            <li>ABS Brake System</li>
+            <li>Electrical &amp; Diagnostics</li>
+            <li>Auto Painting</li>
+            <li>Detailing</li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-contact-col">
+          <h4>Contact</h4>
+          <p><i class="fas fa-phone"></i> <a href="tel:0712233212">071 223 3212</a></p>
+          <p><i class="fas fa-phone"></i> <a href="tel:0717400699">071 740 0699</a></p>
+          <p><i class="fas fa-map-marker-alt"></i> 187 Kirigampamunuwa Rd,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Polgasowita</p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> DSPEC Garage. All rights reserved.</p>
+        <p>Made with <i class="fas fa-heart" style="color:var(--cyan);"></i> in Sri Lanka</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════
+       FLOATING BUTTONS
+  ═══════════════════════════════════════════ -->
+  <a href="https://wa.me/94712233212" class="fab-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="fab-tooltip">Chat on WhatsApp</span>
+  </a>
+
+  <button class="back-to-top" id="backToTop" aria-label="Scroll back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
