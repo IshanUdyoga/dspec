@@ -557,7 +557,7 @@ button { background: none; border: none; cursor: pointer; font: inherit; }
 /* Scroll indicator */
 .hero-scroll {
   position: absolute;
-  bottom: 36px;
+  bottom: 15px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
